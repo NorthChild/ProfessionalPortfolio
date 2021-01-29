@@ -1,0 +1,617 @@
+/* ################################################ */
+/*                      TO DO                       */
+/* ################################################ */
+/*
+
+- Fix the screen size, there should be no side scrolling
+
+*/
+/* ################################################ */
+/*                      TO DO                       */
+/* ################################################ */
+
+/* ################################################ */
+/*                     XL SCREEN                    */
+/* ################################################ */
+
+@media screen and (min-width:1500px) and (max-width: 2000px) {
+
+}
+
+
+/* ################################################ */
+/*                     XL SCREEN                    */
+/* ################################################ */
+
+/* ################################################ */
+/*                    WIDE SCREEN                   */
+/* ################################################ */
+
+@media screen and (min-width:1200px) and (max-width: 1500px) {
+
+  body {
+      margin: 0;
+      background: #343A40;
+    }
+
+    #pageStart {
+      margin: 1%;
+      background: #343A40;
+      color: #343A40;
+      opacity: 0;
+    }
+
+
+/* ################################################ */
+
+    .presentation {
+      margin: 0;
+      background: #DEE2E6;
+      color: #343A40;
+      width: 100%;
+      border-style: solid;
+      border-width: 0.3em 0 0.3em 0;
+      border-color: #495057;
+    }
+
+    .profilePic {
+      width: 13em;
+      height: 13em;
+      border-radius: 5em;
+      border-style: solid;
+      border-width: medium;
+      border-color: #ADB5BD;
+
+      display: inline-block;
+      margin: 2em 2em 0 5em;
+    }
+
+    .presentationName {
+      position: absolute;
+      top: 3em;
+      display: inline-block;
+      width: 30%;
+
+    }
+
+    .presINFO {
+      font-size: 85%;
+      color: #495057;
+    }
+
+    .logoContainer {
+      display: inline-block;
+      width: 30%;
+      margin-right: 2%;
+      margin-left: 83%
+
+
+    }
+
+    .logoImage {
+      width: 3em;
+      border-radius: 8em;
+      border-style: solid;
+      border-width: medium;
+      border-color: #80b918;
+      margin: 0.3em;
+    }
+
+    .logoImage:hover {
+      border-style: solid;
+      border-color: #495057;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+/* ################################################ */
+
+    #aboutMe {
+      display: block;
+      float: left;
+
+      width: 45%;
+      margin-top: 2%;
+      margin-left: 7%;
+
+      background: #DEE2E6;
+      color: #343A40;
+
+      border-style: solid;
+      border-width: 0.3em 0 0.3em 0;
+      border-color: #495057;
+
+      padding: 2em;
+
+    }
+
+    .bio, .techSkills {
+      color: #495057;
+    }
+
+    .containerTitle {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+
+    }
+
+    #skills {
+      display: block;
+      float: right;
+
+      width: 25%;
+      margin-top: 2%;
+      margin-left: 5%;
+      margin-right: 7%;
+
+      background: #DEE2E6;
+      color: #343A40;
+
+      border-style: solid;
+      border-width: 0.3em 0 0.3em 0;
+      border-color: #495057;
+
+      padding: 2em;
+
+
+    }
+
+    .progressBar {
+      border-style: solid;
+      border-width: medium;
+      border-radius: 2em;
+      padding-left: 1em;
+      background: #495057;
+      margin: 2em;
+      color: #80b918;
+      height: 2em;
+      line-height: 2em;
+    }
+
+    .logoCnt {
+      text-align: center;
+    }
+
+    .backToTop {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #80b918;
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+
+    .backToTop:hover {
+      color: #212529;
+    }
+
+
+
+
+
+/* ################################################ */
+
+    .logoImage2 {
+      width: 3em;
+      text-align: center;
+      display: inline-block;
+      border-style: solid;
+      border-color: #F0FFFF;
+      border-radius: 50%;
+      margin: 3% 2% 4% 2%;
+      border-color: #80b918;
+
+    }
+
+
+
+
+/* ################################################ */
+
+
+/* ################################################ */
+
+
+
+}
+
+/* ################################################ */
+/*                    WIDE SCREEN                   */
+/* ################################################ */
+
+/* ################################################ */
+
+/* ################################################ */
+/*                   MEDIUM SCREEN                  */
+/* ################################################ */
+
+@media screen and (min-width:720px) and (max-width: 1200px) {
+
+      body {
+        margin: 0;
+        background: #343A40;
+      }
+
+      #pageStart {
+        margin: 0;
+        background: #343A40;
+        color: #343A40;
+      }
+
+  /* ############################################ */
+
+      .presentationName {
+        color: #212529;
+      }
+
+      .presentation {
+        margin: 4% 0 4% 0;
+        width: 100%;
+        text-align: center;
+        background: #DEE2E6;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .profilePic {
+        margin-top: 5%;
+        width: 25em;
+        height: 25em;
+        border-radius: 30%;
+        border-style: solid;
+        border-color: #ADB5BD;
+        border-width: medium;
+      }
+
+      .presInfo {
+        font-size: 130%;
+        color: #495057;
+      }
+
+      .logoImage {
+        width: 15%;
+        text-align: center;
+        display: inline-block;
+        border-style: solid;
+        border-color: #80b918;
+        border-radius: 50%;
+        margin: 3% 2% 4% 2%;
+      }
+
+      .logoImage2 {
+          width: 15%;
+          text-align: center;
+          display: inline-block;
+          border-style: solid;
+          border-color: #F0FFFF;
+          border-radius: 50%;
+          margin: 3% 2% 4% 2%;
+          border-color: #80b918;
+        }
+
+      .logoImage:hover {
+        border-style: solid;
+        border-color: #212529;
+      }
+
+      .backToTop {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #80b918;
+        margin-bottom: 1em;
+        margin-top: 1em;
+      }
+
+      .backToTop:hover {
+        color: #212529;
+      }
+
+  /* ############################################ */
+
+      .container {
+        margin: 6% 0 4% 0;
+        background: #DEE2E6;
+      }
+
+      .containerTitle {
+        color: #212529;
+        text-align: center;
+        padding-top: 2em;
+        text-transform: uppercase;
+      }
+
+      .bio {
+        margin: 3em;
+        color: #495057;
+        font-size: 120%;
+        text-align: justify;
+      }
+
+  /* ############################################ */
+
+      .techSkills {
+        margin: 3em;
+        color: #495057;
+        font-size: 120%;
+        text-align: left;
+        border-style: solid;
+        border-width: medium;
+        border-radius: 1.5em;
+        border-color: #80b918;
+        padding: 5%;
+      }
+
+      .progressBar {
+        border-style: solid;
+        border-width: medium;
+        border-radius: 2em;
+        padding-left: 1em;
+        background: #495057;
+        margin: 2em;
+        color: #80b918;
+        height: 2em;
+        line-height: 2em;
+      }
+
+      .logoCnt {
+        text-align: center;
+      }
+
+  /* ############################################ */
+
+      .projects {
+        text-align: center;
+        font-size: 120%;
+        margin: 2em 3em 2em 4em;
+      }
+
+  /* ############################################ */
+
+      .education {
+        text-align: center;
+        font-size: 120%;
+        margin: 2em 3em 2em 4em;
+      }
+
+
+  /* ############################################ */
+
+      .language {
+        text-align: center;
+        margin: 2em 3em 2em 4em;
+        font-size: 130%;
+      }
+
+      .languagePref {
+        color: #495057;
+      }
+
+      .language {
+        color: #6C757D;
+      }
+
+  /* ############################################ */
+
+      .contactsInfo {
+        text-align: center;
+        margin: 2em 3em 2em 4em;
+        font-size: 120%;
+      }
+
+      .contacts {
+        color: #495057;
+      }
+
+      .contactsInfo {
+        color: #6C757D;
+      }
+
+}
+
+
+/* ################################################ */
+/*                   MEDIUM SCREEN                  */
+/* ################################################ */
+
+/* ################################################ */
+
+/* ################################################ */
+/*                   PHONE SCREEN                   */
+/* ################################################ */
+
+@media screen and (min-width:300px) and (max-width: 720px) and (orientation: portrait) {
+
+    body {
+      margin: 0;
+      background: #343A40;
+    }
+
+    #pageStart {
+      margin: 0;
+      background: #343A40;
+      color: #343A40;
+    }
+
+/* ############################################ */
+
+    .presentationName {
+      color: #212529;
+    }
+
+    .presentation {
+      margin: 4% 0 4% 0;
+      width: 100%;
+      text-align: center;
+      background: #DEE2E6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .profilePic {
+      margin-top: 5%;
+      width: 10em;
+      height: 10em;
+      border-radius: 25%;
+      border-style: solid;
+      border-color: #ADB5BD;
+      border-width: medium;
+    }
+
+    .presInfo {
+      font-size: 130%;
+      color: #495057;
+    }
+
+    .logoImage {
+      width: 20%;
+      text-align: center;
+      display: inline-block;
+      border-style: solid;
+      border-color: #80b918;
+      border-radius: 50%;
+      margin: 3% 2% 4% 2%;
+    }
+
+    .logoImage2 {
+        width: 20%;
+        text-align: center;
+        display: inline-block;
+        border-style: solid;
+        border-color: #F0FFFF;
+        border-radius: 50%;
+        margin: 3% 2% 4% 2%;
+        border-color: #80b918;
+      }
+
+    .logoImage:hover {
+      border-style: solid;
+      border-color: #212529;
+    }
+
+    .backToTop {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #80b918;
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+
+    .backToTop:hover {
+      color: #212529;
+    }
+
+/* ############################################ */
+
+    .container {
+      margin: 6% 0 4% 0;
+      background: #DEE2E6;
+    }
+
+    .containerTitle {
+      color: #212529;
+      text-align: center;
+      padding-top: 2em;
+      text-transform: uppercase;
+    }
+
+    .bio {
+      margin: 3em;
+      color: #495057;
+      font-size: 120%;
+      text-align: center;
+    }
+
+/* ############################################ */
+
+    .techSkills {
+      margin: 3em;
+      color: #495057;
+      font-size: 120%;
+      text-align: left;
+      border-style: solid;
+      border-width: medium;
+      border-radius: 5%;
+      border-color: #80b918;
+      padding: 5%;
+    }
+
+    .progressBar {
+      border-style: solid;
+      border-width: medium;
+      border-radius: 2em;
+      padding-left: 1em;
+      background: #495057;
+      margin: 2em;
+      color: #80b918;
+      height: 2em;
+      line-height: 2em;
+    }
+
+    .logoCnt {
+      text-align: center;
+    }
+
+/* ############################################ */
+
+    .projects {
+      font-size: 120%;
+      margin: 2em 3em 2em 4em;
+    }
+
+/* ############################################ */
+
+    .education {
+      font-size: 120%;
+      margin: 2em 3em 2em 4em;
+    }
+
+
+/* ############################################ */
+
+    .language {
+      margin: 2em 3em 2em 4em;
+      font-size: 130%;
+    }
+
+    .languagePref {
+      color: #495057;
+    }
+
+    .language {
+      color: #6C757D;
+    }
+
+/* ############################################ */
+
+    .contactsInfo {
+      margin: 2em 3em 2em 4em;
+      font-size: 120%;
+    }
+
+    .contacts {
+      color: #495057;
+    }
+
+    .contactsInfo {
+      color: #6C757D;
+    }
+
+}
+
+/* ################################################ */
+/*                   PHONE SCREEN                   */
+/* ################################################ */
+
+/* ################################################ */
