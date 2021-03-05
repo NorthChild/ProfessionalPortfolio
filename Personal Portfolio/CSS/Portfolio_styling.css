@@ -4,6 +4,9 @@
 /*
 
 - Fix the screen size, there should be no side scrolling
+- add a way for people to contact me directly (contact form sitting on the right at the bottom)
+- fix the big screen div spacing
+- fix the progress bar look (so u can see all of it)
 
 */
 /* ################################################ */
@@ -11,16 +14,417 @@
 /* ################################################ */
 
 /* ################################################ */
-/*                     XL SCREEN                    */
+/*                     XLL SCREEN                   */
 /* ################################################ */
 
-@media screen and (min-width:1500px) and (max-width: 2000px) {
+@media screen and (min-width:1500px) and (max-width: 2300px) {
+
+
+  /* ################################################ */
+  /*                    FLEX-BOX                      */
+  /* ################################################ */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 170% !important;
+    font-family: "Press Start 2P" !important;
+  }
+
+  h2 {
+    font-size: 160% !important;
+    font-family: "Press Start 2P" !important;
+  }
+
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+    grid-gap: 3em;
+
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .columnI {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 65%;
+  }
+
+  .columnII {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+  }
+
+  .columnI div {
+    margin-top: 2em;
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .columnII div {
+    margin-top: 3em;
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  /* ################################################ */
+  /*                    FLEX-BOX                      */
+  /* ################################################ */
+
+    body {
+        margin: 0;
+        background: #343A40 !important;
+        /* alternative background, lighter gray
+        background: #495057;
+        */
+        font-family: "Press Start 2P" !important;
+      }
+
+      #pageStart {
+        margin: 1%;
+        background: #343A40;
+        color: #343A40;
+        opacity: 0;
+      }
+
+
+  /* ################################################ */
+
+      .presentation {
+        margin: 0;
+        background: #DEE2E6;
+        color: #343A40;
+        width: 100%;
+        border-style: solid;
+        border-width: 0.3em 0 0.3em 0;
+        border-color: #495057;
+      }
+
+      .profilePic {
+        width: 13em;
+        height: 13em;
+        border-radius: 5em;
+        border-style: solid;
+        border-width: medium;
+        border-color: #ADB5BD;
+
+        display: inline-block;
+        margin: 2em 2em 0 5em;
+      }
+
+      .presentationName {
+        font-size: 150%;
+        position: absolute;
+        top: 3em;
+        display: inline-block;
+        width: 30%;
+        margin-bottom: 3%;
+
+      }
+
+      .presINFO {
+        font-size: 80%;
+        color: #495057;
+      }
+
+      .logoContainer {
+        display: inline-block;
+        width: 30%;
+        margin-right: 2%;
+        margin-left: 86%;
+        margin-bottom: 1%;
+
+      }
+
+      .logoImage {
+        width: 3em;
+        border-radius: 8em;
+        border-style: solid;
+        border-width: medium;
+        border-color: #80b918;
+        margin: 0.3em;
+      }
+
+      .logoImage:hover {
+        border-style: solid;
+        border-color: #495057;
+      }
+
+      a {
+        text-decoration: none !important;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      .logoImage2 {
+        width: 4em;
+        text-align: center;
+        display: inline-block;
+        border-style: solid;
+        border-color: #F0FFFF;
+        border-radius: 50%;
+        margin: 0 2% 4% 2%;
+        border-color: #80b918;
+    }
+
+
+  /* ################################################ */
+
+      #aboutMe {
+        font-size: 110%;
+        line-height: 1.5em;
+
+
+        background: #DEE2E6;
+        color: #343A40;
+
+        border-style: solid;
+        border-width: 0.3em 0 0.3em 0;
+        border-color: #495057;
+
+        padding: 2em;
+
+      }
+
+      .bio {
+        text-align: center;
+      }
+
+      .bio, .techSkills {
+        color: #495057;
+      }
+
+      .containerTitle {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .techSkills {
+
+        color: #495057;
+
+        text-align: left;
+        border-style: solid;
+        border-width: medium;
+        border-radius: 1.5em;
+        border-color: #80b918;
+        padding: 5%;
+        line-height: 1.5em;
+      }
+
+      .techskillsB {
+        color: #212529;
+        line-height: 2em;
+        font-size: 95%;
+      }
+
+  /* ################################################ */
+
+      #skills {
+
+        font-size: 70%;
+
+        background: #DEE2E6;
+        color: #343A40;
+
+        border-style: solid;
+        border-width: 0.3em 0 0.3em 0;
+        border-color: #495057;
+
+        padding: 2em;
+
+      }
+
+      #proBar {
+        border-color: #495057;
+        border-style: solid;
+        border-width: medium;
+        border-radius: 2em;
+        padding-left: 1em;
+        background: #495057;
+
+        color: #80b918;
+        font-size: 70%;
+
+        line-height: 2.5em;
+        font-size: 100%;
+        text-align: left !important;
+      }
+
+      #greyBar {
+        border-color: #495057;
+
+        border-width: thin;
+        border-radius: 2em;
+        border-color: #495057;
+        background: #495057;
+        color: #80b918;
+        font-size: 70%;
+      }
+
+      .skillLvl {
+        position: absolute;
+        right: 5.5%;
+        color: #495057;
+        font-size: 80%;
+        opacity: 0.6;
+      }
+
+      .logoCnt {
+        text-align: center;
+      }
+
+      .backToTop {
+        display: none;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #80b918;
+        margin-bottom: 1em;
+        margin-top: 1em;
+      }
+
+      .backToTop:hover {
+        color: #212529;
+      }
+
+  /* ################################################ */
+
+        #projects {
+
+          background: #DEE2E6;
+          color: #343A40;
+
+          border-style: solid;
+          border-width: 0.3em 0 0.3em 0;
+          border-color: #495057;
+
+          padding: 2em;
+          margin-bottom: 3%;
+
+        }
+
+        .projects {
+          color: #495057;
+        }
+
+        b {
+          color: #212529 !important;
+          line-height: 1.5em;
+        }
+
+
+
+        .anchorDiv {
+          text-align: center;
+          margin-bottom: 5%;
+          margin-top: 10%;
+        }
+
+        .moreAnchor {
+          text-decoration: none;
+          color: #212529;
+        }
+
+        .moreAnchor:hover {
+          color: #80b918;
+        }
+
+
+  /* ################################################ */
+
+        #education {
+
+          text-align: center;
+          font-size: 80%;
+
+          background: #DEE2E6;
+          color: #343A40;
+
+          border-style: solid;
+          border-width: 0.3em 0 0.3em 0;
+          border-color: #495057;
+
+          padding: 2em;
+
+        }
+
+
+  /* ################################################ */
+
+        #spokenLang {
+
+          text-align: center;
+
+          font-size: 80%;
+
+          background: #DEE2E6;
+          color: #343A40;
+
+          border-style: solid;
+          border-width: 0.3em 0 0.3em 0;
+          border-color: #495057;
+
+          padding: 2em;
+
+      }
+
+  /* ################################################ */
+
+        #contacts {
+
+          text-align: center;
+          font-size: 80%;
+
+          background: #DEE2E6;
+          color: #343A40;
+
+          border-style: solid;
+          border-width: 0.3em 0 0.3em 0;
+          border-color: #495057;
+
+          padding: 2em;
+
+        }
+
+        #contacts img {
+          display: none;
+        }
+
+  /* ################################################ */
+
+        .lastBacktoTop {
+          text-transform: capitalize;
+          display: block;
+          text-align: center;
+          margin: 1.5%;
+
+        }
+
+        section {
+          height: 25em;
+          text-align: center;
+          line-height: 17.5em;
+        }
+  /* ################################################ */
+
 
 }
 
-
 /* ################################################ */
-/*                     XL SCREEN                    */
+/*                     XLL SCREEN                   */
 /* ################################################ */
 
 /* ################################################ */
@@ -29,9 +433,73 @@
 
 @media screen and (min-width:1200px) and (max-width: 1500px) {
 
+/* ################################################ */
+/*                    FLEX-BOX                      */
+/* ################################################ */
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+  grid-gap: 3em;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.columnI {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 65%;
+}
+
+.columnII {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+}
+
+.columnI div {
+  margin-top: 2em;
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.columnII div {
+  margin-top: 3em;
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+/* ################################################ */
+/*                    FLEX-BOX                      */
+/* ################################################ */
+
+  h1 {
+    font-size: 160% !important;
+    font-family: "Press Start 2P" !important;
+  }
+
+  h2 {
+    font-size: 150% !important;
+    font-family: "Press Start 2P" !important;
+  }
+
   body {
       margin: 0;
-      background: #343A40;
+      background: #343A40 !important;
+      /* alternative background, lighter gray
+      background: #495057;
+      */
+      font-family: "Press Start 2P" !important;
     }
 
     #pageStart {
@@ -67,15 +535,17 @@
     }
 
     .presentationName {
+      font-size: 150%;
       position: absolute;
       top: 3em;
       display: inline-block;
       width: 30%;
+      margin-bottom: 3%;
 
     }
 
     .presINFO {
-      font-size: 85%;
+      font-size: 80%;
       color: #495057;
     }
 
@@ -83,8 +553,8 @@
       display: inline-block;
       width: 30%;
       margin-right: 2%;
-      margin-left: 83%
-
+      margin-left: 83%;
+      margin-bottom: 1%;
 
     }
 
@@ -103,18 +573,31 @@
     }
 
     a {
+      text-decoration: none !important;
+    }
+
+    a:hover {
       text-decoration: none;
     }
+
+    .logoImage2 {
+      width: 4em;
+      text-align: center;
+      display: inline-block;
+      border-style: solid;
+      border-color: #F0FFFF;
+      border-radius: 50%;
+      margin: 0 2% 4% 2%;
+      border-color: #80b918;
+  }
+
 
 /* ################################################ */
 
     #aboutMe {
-      display: block;
-      float: left;
+      font-size: 110%;
+      line-height: 1.5em;
 
-      width: 45%;
-      margin-top: 2%;
-      margin-left: 7%;
 
       background: #DEE2E6;
       color: #343A40;
@@ -125,6 +608,10 @@
 
       padding: 2em;
 
+    }
+
+    .bio {
+      text-align: center;
     }
 
     .bio, .techSkills {
@@ -135,17 +622,32 @@
       width: 100%;
       display: inline-block;
       text-align: center;
-
     }
 
-    #skills {
-      display: block;
-      float: right;
+    .techSkills {
 
-      width: 25%;
-      margin-top: 2%;
-      margin-left: 5%;
-      margin-right: 7%;
+      color: #495057;
+
+      text-align: left;
+      border-style: solid;
+      border-width: medium;
+      border-radius: 1.5em;
+      border-color: #80b918;
+      padding: 5%;
+      line-height: 1.5em;
+    }
+
+    .techskillsB {
+      color: #212529;
+      line-height: 2em;
+      font-size: 95%;
+    }
+
+/* ################################################ */
+
+    #skills {
+
+      font-size: 70%;
 
       background: #DEE2E6;
       color: #343A40;
@@ -156,27 +658,54 @@
 
       padding: 2em;
 
-
     }
 
-    .progressBar {
+    #proBar {
+      border-color: #495057;
       border-style: solid;
       border-width: medium;
       border-radius: 2em;
       padding-left: 1em;
       background: #495057;
-      margin: 2em;
+
       color: #80b918;
-      height: 2em;
-      line-height: 2em;
+      font-size: 70%;
+      text-align: left !important;
+
+      line-height: 2.5em;
+      font-size: 100%;
     }
+
+    #greyBar {
+      border-color: #495057;
+
+      border-width: thin;
+      border-radius: 2em;
+      border-color: #495057;
+      background: #495057;
+      color: #80b918;
+      font-size: 70%;
+    }
+
+    .skillLvl {
+      position: absolute;
+      right: 6%;
+      color: #495057;
+      font-size: 80%;
+      opacity: 0.6;
+    }
+
+    .progBarCont {
+      size: 200%;
+    }
+
 
     .logoCnt {
       text-align: center;
     }
 
     .backToTop {
-      display: inline-block;
+      display: none;
       width: 100%;
       text-align: center;
       text-transform: uppercase;
@@ -189,34 +718,126 @@
       color: #212529;
     }
 
+/* ################################################ */
+
+      #projects {
+
+        background: #DEE2E6;
+        color: #343A40;
+
+        border-style: solid;
+        border-width: 0.3em 0 0.3em 0;
+        border-color: #495057;
+
+        padding: 2em;
+        margin-bottom: 3%;
+
+      }
+
+      .projects {
+        color: #495057;
+      }
+
+      b {
+        color: #212529 !important;
+        line-height: 1.5em;
+      }
 
 
+
+      .anchorDiv {
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top: 10%;
+      }
+
+      .moreAnchor {
+        text-decoration: none;
+        color: #212529;
+      }
+
+      .moreAnchor:hover {
+        color: #80b918;
+      }
 
 
 /* ################################################ */
 
-    .logoImage2 {
-      width: 3em;
-      text-align: center;
-      display: inline-block;
-      border-style: solid;
-      border-color: #F0FFFF;
-      border-radius: 50%;
-      margin: 3% 2% 4% 2%;
-      border-color: #80b918;
+      #education {
+
+        text-align: center;
+        font-size: 80%;
+
+        background: #DEE2E6;
+        color: #343A40;
+
+        border-style: solid;
+        border-width: 0.3em 0 0.3em 0;
+        border-color: #495057;
+
+        padding: 2em;
+
+      }
+
+
+/* ################################################ */
+
+      #spokenLang {
+
+        text-align: center;
+
+        font-size: 80%;
+
+        background: #DEE2E6;
+        color: #343A40;
+
+        border-style: solid;
+        border-width: 0.3em 0 0.3em 0;
+        border-color: #495057;
+
+        padding: 2em;
 
     }
 
+/* ################################################ */
 
+      #contacts {
 
+        text-align: center;
+        font-size: 80%;
+
+        background: #DEE2E6;
+        color: #343A40;
+
+        border-style: solid;
+        border-width: 0.3em 0 0.3em 0;
+        border-color: #495057;
+
+        padding: 2em;
+
+      }
+
+      #contacts img {
+        display: none;
+      }
 
 /* ################################################ */
 
+      .lastBacktoTop {
+        text-transform: capitalize;
+        display: block;
+        text-align: center;
+        margin: 1.5%;
+
+      }
+
+      section {
+        height: 26em;
+        text-align: center;
+        line-height: 17.5em;
+      }
 
 /* ################################################ */
-
-
-
 }
 
 /* ################################################ */
@@ -231,9 +852,20 @@
 
 @media screen and (min-width:720px) and (max-width: 1200px) {
 
+      h1 {
+        font-size: 130% !important;
+        font-family: "Press Start 2P" !important;
+      }
+
+      h2 {
+        font-size: 120% !important;
+        font-family: "Press Start 2P" !important;
+      }
+
       body {
         margin: 0;
-        background: #343A40;
+        background: #343A40 !important;
+        font-family: "Press Start 2P" !important;
       }
 
       #pageStart {
@@ -256,26 +888,28 @@
       }
 
       a {
-        text-decoration: none;
+        text-decoration: none !important;
       }
 
       .profilePic {
         margin-top: 5%;
-        width: 25em;
-        height: 25em;
+        margin-bottom: 6%;
+        width: 20em;
+        height: 20em;
         border-radius: 30%;
         border-style: solid;
         border-color: #ADB5BD;
         border-width: medium;
       }
 
-      .presInfo {
-        font-size: 130%;
+      .presINFO {
+        font-size: 90%;
+
         color: #495057;
       }
 
       .logoImage {
-        width: 15%;
+        width: 8%;
         text-align: center;
         display: inline-block;
         border-style: solid;
@@ -285,7 +919,7 @@
       }
 
       .logoImage2 {
-          width: 15%;
+          width: 8%;
           text-align: center;
           display: inline-block;
           border-style: solid;
@@ -331,8 +965,9 @@
       .bio {
         margin: 3em;
         color: #495057;
-        font-size: 120%;
+        font-size: 100%;
         text-align: justify;
+        line-height: 1.5em;
       }
 
   /* ############################################ */
@@ -340,25 +975,54 @@
       .techSkills {
         margin: 3em;
         color: #495057;
-        font-size: 120%;
+        font-size: 90%;
         text-align: left;
         border-style: solid;
         border-width: medium;
         border-radius: 1.5em;
         border-color: #80b918;
         padding: 5%;
+        line-height: 1.5em;
       }
 
-      .progressBar {
+      .techskillsB {
+        color: #212529;
+        line-height: 2em;
+        font-size: 95%;
+      }
+
+      #proBar {
+        border-color: #495057;
         border-style: solid;
         border-width: medium;
         border-radius: 2em;
-        padding-left: 1em;
+
         background: #495057;
-        margin: 2em;
         color: #80b918;
-        height: 2em;
-        line-height: 2em;
+        font-size: 70%;
+        line-height: 2.5em;
+        font-size: 100%;
+        text-align: left !important;
+      }
+
+      #greyBar {
+
+        border-color: #495057;
+        border-width: thin;
+        border-radius: 2em;
+        border-color: #495057;
+        background: #495057;
+        color: #80b918;
+        font-size: 70%;
+        margin: 3% 15% 2% 15%;
+      }
+
+      .skillLvl {
+        position: absolute;
+        right: 17%;
+        color: #495057;
+        font-size: 80%;
+        opacity: 0.6;
       }
 
       .logoCnt {
@@ -369,16 +1033,38 @@
 
       .projects {
         text-align: center;
-        font-size: 120%;
+        font-size: 110%;
+        line-height: 1.5em;
         margin: 2em 3em 2em 4em;
+        color: #495057;
       }
 
+      b {
+        color: #212529 !important;
+        line-height: 1.5em;
+      }
+
+      .anchorDiv {
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top: 10%;
+      }
+
+      .moreAnchor {
+        text-decoration: none;
+        color: #212529;
+      }
+
+      .moreAnchor:hover {
+        color: #80b918;
+      }
   /* ############################################ */
 
       .education {
         text-align: center;
-        font-size: 120%;
+        font-size: 110%;
         margin: 2em 3em 2em 4em;
+        color: #495057;
       }
 
 
@@ -404,6 +1090,7 @@
         text-align: center;
         margin: 2em 3em 2em 4em;
         font-size: 120%;
+        line-height: 1.5em;
       }
 
       .contacts {
@@ -413,6 +1100,18 @@
       .contactsInfo {
         color: #6C757D;
       }
+
+/* ################################################ */
+
+      .lastBacktoTop {
+        display: none;
+      }
+
+      #comingS {
+        display: none;
+      }
+
+/* ################################################ */
 
 }
 
@@ -429,9 +1128,15 @@
 
 @media screen and (min-width:300px) and (max-width: 720px) and (orientation: portrait) {
 
+    h1,h2 {
+      font-size: 100% !important;
+      font-family: "Press Start 2P" !important;
+    }
+
     body {
       margin: 0;
-      background: #343A40;
+      background: #343A40 !important;
+      font-family: "Press Start 2P" !important;
     }
 
     #pageStart {
@@ -444,6 +1149,8 @@
 
     .presentationName {
       color: #212529;
+      font-size: 115%;
+      line-height: 1.5em;
     }
 
     .presentation {
@@ -454,11 +1161,11 @@
     }
 
     a {
-      text-decoration: none;
+      text-decoration: none !important;
     }
 
     .profilePic {
-      margin-top: 5%;
+      margin: 8% auto 5% auto;
       width: 10em;
       height: 10em;
       border-radius: 25%;
@@ -467,23 +1174,23 @@
       border-width: medium;
     }
 
-    .presInfo {
-      font-size: 130%;
+    .presINFO {
+      font-size: 90%;
       color: #495057;
     }
 
     .logoImage {
-      width: 20%;
+      width: 15%;
       text-align: center;
       display: inline-block;
       border-style: solid;
       border-color: #80b918;
       border-radius: 50%;
-      margin: 3% 2% 4% 2%;
+      margin: 3% 2% 5% 2%;
     }
 
     .logoImage2 {
-        width: 20%;
+        width: 15%;
         text-align: center;
         display: inline-block;
         border-style: solid;
@@ -529,16 +1236,20 @@
     .bio {
       margin: 3em;
       color: #495057;
-      font-size: 120%;
+      font-size: 90%;
+      line-height: 1.5em;
       text-align: center;
     }
+
+
 
 /* ############################################ */
 
     .techSkills {
       margin: 3em;
       color: #495057;
-      font-size: 120%;
+      font-size: 80%;
+      line-height: 1.5em;
       text-align: left;
       border-style: solid;
       border-width: medium;
@@ -547,16 +1258,44 @@
       padding: 5%;
     }
 
-    .progressBar {
+    b {
+      color: #212529 !important;
+      text-align: center !important;
+    }
+
+    #proBar {
+      border-color: #495057;
       border-style: solid;
       border-width: medium;
       border-radius: 2em;
       padding-left: 1em;
       background: #495057;
-      margin: 2em;
+
       color: #80b918;
-      height: 2em;
-      line-height: 2em;
+      font-size: 70%;
+      text-align: left !important;
+
+      line-height: 2.5em;
+      font-size: 100%;
+    }
+
+    #greyBar {
+      border-radius: 2em;
+      border-color: #495057;
+      background: #495057;
+      color: #80b918;
+      font-size: 70%;
+      margin: 2% 12% 2% 12%;
+      text-align: right !important;
+      line-height: 1em;
+    }
+
+    .skillLvl {
+      position: absolute;
+      right: 15%;
+      color: #495057;
+      font-size: 80%;
+      opacity: 0.6;
     }
 
     .logoCnt {
@@ -566,30 +1305,55 @@
 /* ############################################ */
 
     .projects {
-      font-size: 120%;
+      font-size: 90%;
+      color: #495057;
+      line-height: 1.5em;
       margin: 2em 3em 2em 4em;
+    }
+
+    .anchorDiv {
+      text-align: center;
+      margin-bottom: 10%;
+      margin-top: 15%;
+    }
+
+    .moreAnchor {
+      text-decoration: none;
+      color: #212529;
+    }
+
+    .moreAnchor:hover {
+      color: #80b918;
     }
 
 /* ############################################ */
 
     .education {
-      font-size: 120%;
+      font-size: 90%;
       margin: 2em 3em 2em 4em;
+      color: #495057;
+      line-height: 1.5em;
+      text-align: center;
     }
 
 
 /* ############################################ */
 
     .language {
+      text-align: center;
       margin: 2em 3em 2em 4em;
       font-size: 130%;
     }
 
     .languagePref {
+      font-size: 90%;
+      line-height: 1.5em;
       color: #495057;
     }
 
     .language {
+      font-size: 90%;
+      line-height: 1.5em;
       color: #6C757D;
     }
 
@@ -597,7 +1361,9 @@
 
     .contactsInfo {
       margin: 2em 3em 2em 4em;
-      font-size: 120%;
+      font-size: 90%;
+      line-height: 1.5em;
+      text-align: center;
     }
 
     .contacts {
@@ -607,6 +1373,20 @@
     .contactsInfo {
       color: #6C757D;
     }
+
+/* ################################################ */
+
+    .lastBacktoTop {
+      display: none;
+
+    }
+
+    #comingS {
+      display: none;
+    }
+
+/* ################################################ */
+
 
 }
 
