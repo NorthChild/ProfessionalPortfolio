@@ -9,4 +9,4 @@ viewable on http://michaelcariniportfolio.22web.org/?i=1
 TO DO:
 - add php
 - fix parts of responsive design for other browsers
-
+- fix profile image path
